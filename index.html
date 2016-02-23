@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="es">
+    
     <head>
         <meta charset="utf-8">
         <title>Jaleo</title>
@@ -47,57 +48,49 @@
             <li>
                 <a href=""><img border="0" alt="Los Vengadores: La Era de Ultrón" src="images/vengadores-l-01.jpg" /></a>
 
-                <!-- div: film information -->
-                <div class="information">
-             
-                    <ul>
-                  
-                        <!-- Title film -->
-                        <li>
-                            <h1>Los Vengadores: La Era de Ultrón</h1>
-                        </li>
-                        <!-- /Title film -->
-                  
-                        <!-- Info film -->
-                        <li>
-                            <ul>
-                                <li>
-                                    <p>
-                                        <b>AAAA</b> <!-- release year -->
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        +18 HD 1 h 34 min <!-- duration -->
-                                    </p>
-                                </li>
-                                <li>
-                                    <img src="PENDIENTE" alt="Puntuación" /> <!-- Score --> <!-- add stars link -->
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- /Info film -->
-                  
-                        <!-- More info button -->
-                        <li>
-                            <div class="more info">
-                                <a href="" class="button" ><b>MÁS INFO</b></a>
-                            </div>
-                        </li>
-                        <!-- /More info button -->
+                <!-- film information -->
+                <ul>
 
-                        <!-- Pricing -->
-                        <li>
-                            <div class="pricing">
-                                <a href="" class="button">VER AHORA<span class="price"><strong>2.95 €</strong></span></a>
-                            </div>        
-                        </li>
-                        <!-- /Pricing -->
-                  
-                    </ul>
-                
-                </div>
-                <!-- div: film information -->
+                    <!-- Title film -->
+                    <li>
+                        <h1>Los Vengadores: La Era de Ultrón</h1>
+                    </li>
+                    <!-- /Title film -->
+
+                    <!-- Info film -->
+                    <li>
+                        <ul>
+                            <li>
+                                <b><time datetime="2015">2015</time></b> <!-- release year -->
+                            </li>
+                            <li>
+                                <abbr title="mayores de">+</abbr>18<abbr lang="en-us" title="High Definition">HD</abbr><time>1<abbr title="hora">h</abbr>34<abbr title="minutos">min</abbr></time> <!-- duration -->
+                            </li>
+                            <li>
+                                <img src="PENDIENTE" alt="Puntuación" /> 2'5 sobre 5 <!-- Score --> <!-- add stars link -->
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /Info film -->
+
+                    <!-- More info button -->
+                    <li>
+                        <div class="more info">
+                            <a href="" class="button" ><b>MÁS INFO</b></a>
+                        </div>
+                    </li>
+                    <!-- /More info button -->
+
+                    <!-- Pricing -->
+                    <li>
+                        <div class="pricing">
+                            <a href="" class="button">VER AHORA<span class="price"><strong>2.95 <abbr title="euros">€</abbr></strong></span></a>
+                        </div>        
+                    </li>
+                    <!-- /Pricing -->
+
+                </ul>
+                <!-- film information -->
 
             </li>
             <!-- /Film 1 -->
@@ -125,156 +118,165 @@
     <!-- section: catalogue -->
     <section>
         <h2>Catálogo de Jaleo</h2>
+        
         <!-- Div: form -->
         <div>
             <form>
                 
-                <label for="filter">Filtrar por</label>
-                <select name="type" id="filter">
-                    <option>Tipo</option>
-                    <option>Películas</option>
-                    <option>Series</option>
-                </select>
-                <select name="genre" id="filter">
-                    <option>Género</option>
-                    <option>Para toda la familia</option>
-                    <option>Acción y aventura</option>
-                    <option>Animación</option>
-                    <option>Drama</option>
-                    <option>Ciencia ficción y fantasía</option>
-                    <option>Clásicos</option>
-                    <option>Deportes</option>
-                    <option>Documental</option>
-                    <option>Independiente</option>
-                    <option>Infantil</option>
-                    <option>Musical</option>
-                    <option>Romance</option>
-                    <option>Terror y suspense</option>
-                    <option>Western</option>
-                </select>
-                
-                <label for="new">
-                <input type="checkbox" id="new">Solo novedades
-                </label>
-            
-                <label for="classify">Ordenar por</label>
-                <select name="classify" id="classify">
-                    <option>Más populares</option>
-                    <option>Mejor valoradas</option>
-                    <option>Año de publicación</option>
-                    <option>A-Z</option>
-                </select>
+                <!-- fieldset: filter by -->
+                <fieldset>
+                    <legend>Filtrar por</legend>
+                    
+                            <!-- type filter -->
+                            <label for="type">Tipo</label>
+                            <select name="type" id="type">
+                                <option>Tipo</option>
+                                <option>Películas</option>
+                                <option>Series</option>
+                            </select>
+                            <!-- /type filter -->
+                    
+                            <!-- genre filter -->
+                            <label for="genre"></label>
+                            <select name="genre" id="genre">
+                                <option>Género</option>
+                                <option>Para toda la familia</option>
+                                <option>Acción y aventura</option>
+                                <option>Animación</option>
+                                <option>Drama</option>
+                                <option>Ciencia ficción y fantasía</option>
+                                <option>Clásicos</option>
+                                <option>Deportes</option>
+                                <option>Documental</option>
+                                <option>Independiente</option>
+                                <option>Infantil</option>
+                                <option>Musical</option>
+                                <option>Romance</option>
+                                <option>Terror y suspense</option>
+                                <option>Western</option>
+                            </select>
+                            <!-- /genre filter -->
+                    
+                            <!-- show-new filter -->
+                            <label for="new">
+                            <input type="checkbox" id="new">Solo novedades
+                            </label>
+                            <!-- /show-new filter -->
+                    
+                    </fieldset>
+                    <!-- /fieldset: filter by -->
+                            
+                    <!-- fieldset: classify filter -->
+                    <fieldset>
+                        <legend>Ordenar por</legend>
+                            <label for="classify">Ordenar por</label>
+                            <select name="classify" id="classify">
+                                <option>Más populares</option>
+                                <option>Mejor valoradas</option>
+                                <option>Año de publicación</option>
+                                <option>A-Z</option>
+                            </select>
+                    </fieldset>            
+                    <!-- /fieldset: classify filter -->
+                    
             </form>
-            
         </div>
         <!-- /Div: form -->
         
         <!-- Div: film list -->
         <div>
-            <div>
-                <ul>
-                    <li>
-                        <img src="images/posters/127-dias.jpg" lang="es" alt="127 días" /><br>
-                        <a href=""><h2>127 días</h2></a>
-                        <p>2010</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/apocalypse-now.jpg" lang="en-us" alt="apocalypse now" /><br>
-                        <a href=""><h2>Apocalypse Now</h2></a>
-                        <p>1979</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/dracula.jpg" lang="es" alt="drácula" /><br>
-                        <a href=""><h2>Drácula</h2></a>
-                        <p>1931</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/selma.jpg" lang="es" alt="selma" /><br>
-                        <a href=""><h2>Selma</h2></a>
-                        <p>2014</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/batman.jpg" lang="en-us" alt="batman" /><br>
-                        <a href=""><h2>Batman</h2></a>
-                        <p>1966</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/et.jpg" lang="es" alt="ET el extraterrestre" /><br>
-                        <a href=""><h2>E.T., el extraterrestre</h2></a>
-                        <p>1982</p>                                    
-                    </li>
-                </ul>
-            </div>
-        <hr>    
-            <div>
-                <ul>
-                    <li>
-                        <img src="images/posters/amelie.jpg" lang="fr" alt="amelie" /><br>
-                        <a href=""><h2>Amelie</h2></a>
-                        <p>2001</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/cisne-negro.jpg" lang="es" alt="cisne negro" /><br>
-                        <a href=""><h2>Cisne negro</h2></a>
-                        <p>2010</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/her.jpg" lang="en" alt="her" /><br>
-                        <a href=""><h2>Her</h2></a>
-                        <p>2013</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/el-silencio-de-los-corderos.jpg" lang="es" alt="el silencio de los corderos" /><br>
-                        <a href=""><h2>El silencio de los corderos</h2></a>
-                        <p>1991</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/avatar.jpg" lang="es" alt="avatar" /><br>
-                        <a href=""><h2>Avatar</h2></a>
-                        <p>2009</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/malefica.jpg" lang="es" alt="maléfica" /><br>
-                        <a href=""><h2>Maléfica</h2></a>
-                        <p>2014</p>                                    
-                    </li>
-                </ul>
-            </div>
-        <hr>
-            <div>
-                <ul>
-                    <li>
-                        <img src="images/posters/american-beauty.jpg" lang="en-us" alt="american beauty" /><br>
-                        <a href=""><h2>American Beauty</h2></a>
-                        <p>1999</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/tintin.jpg" lang="es" alt="las aventuras de tintin" /><br>
-                        <a href=""><h2>Las aventuras de Tintin</h2></a>
-                        <p>2011</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/sinsajo.jpg" lang="es" alt="los juegos del hambre: sinsajo parte 1" /><br>
-                        <a href=""><h2>Los juegos del hambre: Sinsajo - Parte 1</h2></a>
-                        <p>2014</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/vengadores.jpg" lang="es" alt="los vengadores" /><br>
-                        <a href=""><h2>Los Vengadores</h2></a>
-                        <p>2012</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/parque-jurasico.jpg" lang="es" alt="parque jurásico" /><br>
-                        <a href=""><h2>Parque Jurásico</h2></a>
-                        <p>1993</p>                                    
-                    </li>
-                    <li>
-                        <img src="images/posters/totoro.jpg" lang="es" alt="mi vecino totoro" /><br>
-                        <a href=""><h2>Mi vecino Totoro</h2></a>
-                        <p>1988</p>                                    
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <img src="images/posters/127-dias.jpg" lang="es" alt="127 días" /><br>
+                    <a href=""><h2>127 días</h2></a>
+                    <p>2010</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/apocalypse-now.jpg" lang="en-us" alt="apocalypse now" /><br>
+                    <a href=""><h2>Apocalypse Now</h2></a>
+                    <p>1979</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/dracula.jpg" lang="es" alt="drácula" /><br>
+                    <a href=""><h2>Drácula</h2></a>
+                    <p>1931</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/selma.jpg" lang="es" alt="selma" /><br>
+                    <a href=""><h2>Selma</h2></a>
+                    <p>2014</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/batman.jpg" lang="en-us" alt="batman" /><br>
+                    <a href=""><h2>Batman</h2></a>
+                    <p>1966</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/et.jpg" lang="es" alt="ET el extraterrestre" /><br>
+                    <a href=""><h2>E.T., el extraterrestre</h2></a>
+                    <p>1982</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/amelie.jpg" lang="fr" alt="amelie" /><br>
+                    <a href=""><h2>Amelie</h2></a>
+                    <p>2001</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/cisne-negro.jpg" lang="es" alt="cisne negro" /><br>
+                    <a href=""><h2>Cisne negro</h2></a>
+                    <p>2010</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/her.jpg" lang="en" alt="her" /><br>
+                    <a href=""><h2>Her</h2></a>
+                    <p>2013</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/el-silencio-de-los-corderos.jpg" lang="es" alt="el silencio de los corderos" /><br>
+                    <a href=""><h2>El silencio de los corderos</h2></a>
+                    <p>1991</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/avatar.jpg" lang="es" alt="avatar" /><br>
+                    <a href=""><h2>Avatar</h2></a>
+                    <p>2009</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/malefica.jpg" lang="es" alt="maléfica" /><br>
+                    <a href=""><h2>Maléfica</h2></a>
+                    <p>2014</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/american-beauty.jpg" lang="en-us" alt="american beauty" /><br>
+                    <a href=""><h2>American Beauty</h2></a>
+                    <p>1999</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/tintin.jpg" lang="es" alt="las aventuras de tintin" /><br>
+                    <a href=""><h2>Las aventuras de Tintin</h2></a>
+                    <p>2011</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/sinsajo.jpg" lang="es" alt="los juegos del hambre: sinsajo parte 1" /><br>
+                    <a href=""><h2>Los juegos del hambre: Sinsajo - Parte 1</h2></a>
+                    <p>2014</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/vengadores.jpg" lang="es" alt="los vengadores" /><br>
+                    <a href=""><h2>Los Vengadores</h2></a>
+                    <p>2012</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/parque-jurasico.jpg" lang="es" alt="parque jurásico" /><br>
+                    <a href=""><h2>Parque Jurásico</h2></a>
+                    <p>1993</p>                                    
+                </li>
+                <li>
+                    <img src="images/posters/totoro.jpg" lang="es" alt="mi vecino totoro" /><br>
+                    <a href=""><h2>Mi vecino Totoro</h2></a>
+                    <p>1988</p>                                    
+                </li>
+            </ul>
         </div>
         <!-- /Div: film list -->
     <hr>
@@ -305,26 +307,21 @@
         
         <h2>Como funciona Jaleo</h2>
         
-        <div>
-            <ul>
-                <li><h3>Elige tu película</h3></li>
-                <li>Es muy fácil, Jaleo cuenta con casi 4500 referencias donde encontrar películas de estreno, grandes clásicos y series de culto </li>
-            </ul>
-        </div>
-        
-        <div>        
-            <ul>
-                <li><h3>Cómprala en un clic</h3></li>
-                <li> En Jaleo no te pediremos que pierdas el tiempo rellenando infinitos formularios. En menos de 1 minuto podrás empezar a ver tu selección. </li>
-            </ul>
-        </div>
-        
-        <div>        
-            <ul>
-                <li><h3>Disfrútala dónde quieras</h3></li>
-                <li> Una vez comiences a ver la película, dispones de 72h. para verla cuantas veces quieras, y en tantos dispositivos como desees. Cómodo ¿no?</li>
-            </ul>
-        </div>
+
+        <ul>
+            <li><h3>Elige tu película</h3></li>
+            <li>Es muy fácil, Jaleo cuenta con casi 4500 referencias donde encontrar películas de estreno, grandes clásicos y series de culto </li>
+        </ul>
+
+        <ul>
+            <li><h3>Cómprala en un clic</h3></li>
+            <li> En Jaleo no te pediremos que pierdas el tiempo rellenando infinitos formularios. En menos de 1 minuto podrás empezar a ver tu selección. </li>
+        </ul>
+
+        <ul>
+            <li><h3>Disfrútala dónde quieras</h3></li>
+            <li> Una vez comiences a ver la película, dispones de 72h. para verla cuantas veces quieras, y en tantos dispositivos como desees. Cómodo ¿no?</li>
+        </ul>
 
     </section>
     <!-- /section: how-to -->
