@@ -18,7 +18,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="">Jaleo</a>
+                        <a href="index.html">Jaleo</a>
                     </li>
                     <li>
                         <a href="">Peliculas</a>
@@ -43,8 +43,8 @@
             
             <div>
                 <h1>Regístrate para empezar a ver Los Vengadores: La Era de Ultrón</h1>
-                <p>Una vez comiences a ver la película, dispones de 72h. para verla cuantas veces, y tantos los dispositivos como quieras.</p>
-                <p>¿Ya estás registrado?<a href="">Inicia tu sesión</a>ahora.</p>
+                <p>Una vez comiences a ver la película, dispones de 72<abbr title="horas">h.</abbr> para verla cuantas veces, y tantos los dispositivos como quieras.</p>
+                <p>¿Ya estás registrado? <a href="">Inicia tu sesión</a> ahora.</p>
             </div>
             <hr>
             <div>
@@ -74,14 +74,25 @@
                     </fieldset>
                     <!-- /fieldset: payment data -->
                     
-                    <label for="mailing">
-                    <input type="checkbox" id="mailing">Recibir correos electrónicos ocasionales con noticias y novedades de Jaleo.
-                    </label>
-                    <br>
-                    <label for="submit">
-                    <input type="submit" name="register">REGÍSTRATE</input>
-                    </label>
+                    <!-- fieldset: mailing checkbox-->
+                    <fieldset class="mailing">
+                        
+                        <label for="mailing">
+                        <input type="checkbox" id="mailing">Recibir correos electrónicos ocasionales con noticias y novedades de Jaleo.
+                        </label>
+                        
+                    </fieldset>
+                    <!-- /fieldset: mailing checkbox -->
                     
+                    <!-- fieldset: submit button-->
+                    <fieldset class="submit">
+                        
+                        <label for="submit">
+                        <input type="submit" id="submit" value="REGÍSTRATE"></input>
+                        </label>
+                    
+                    </fieldset>
+                     <!-- /fieldset: submit button -->
                 </form>     
             </div>
         
