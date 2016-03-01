@@ -1,0 +1,518 @@
+!!! 5
+%html(lang="es")
+
+  %head
+  
+    %meta(charset="utf-8")
+    %title Jaleo
+    %meta(name="description" content="Página de prueba")
+    %meta(name="author" content="José A. Hernández")
+    
+  %body
+  
+    %a(href="#main") Saltar a contenido
+    
+    %header
+    
+      %nav
+        %ul
+          %li
+            %a(href="#") Jaleo
+          %li
+            %a(href="#") Películas
+          %li
+            %a(href="#") Series
+          %li
+            %a(href="#") Explora
+          %li
+            %a(href="#") Iniciar sesión
+    
+    %hr
+    
+    %section.hero
+    
+      %ul
+      
+        %li
+        
+          %ul
+          
+            %li
+              %h1 Los Vengadores: La Era de Ultrón
+            
+            %li
+              %ul
+                %li
+                  %time(datetime="2015") 2015
+                %li
+                  <abbr title="Para mayores de">+</abbr>18<abbr lang="en-us" title="High Definition"> HD </abbr><time datetime=PT1H34M>1<abbr title="hora">h</abbr> 34<abbr title="minutos">min</abbr></time>
+                %li
+                  %img(src="#" alt="puntuación") 2'5 estrellas sobre 5
+                
+            %li
+              .pricing
+                %a.button(href="details2.html")
+                  %b Más info
+            
+            %li
+              .pricing
+                %a.pricing(href="register2.html")
+                  %span.price
+                    %strong 2.95
+                    %abbr(title="euros")€
+      
+      %ul
+        %li
+          %a(href="#")
+            %img(alt="Anterior" src="#")
+            
+        %li
+          %a(href="#")
+            %img(alt="Siguiente" src="#")
+      
+    %hr
+         
+    #main(role="main")
+    
+      %section.catalogue
+      
+        %h2 Catálogo de Jaleo
+        
+        %form
+          %fieldset
+            %legend Filtrar por
+              
+            %label(for="type") Tipo
+            %select#type(name="type")
+              %option Tipo
+              %option Películas
+              %option Series
+
+            %label(for="genre") Género
+            %select#genre(name="genre")
+              %option Género
+              %option Para toda la familia
+              %option Acción y aventura
+              %option Animación
+              %option Drama
+              %option Ciencia ficción y fantasía
+              %option Clásicos
+              %option Deportes
+              %option Documental
+              %option Independiente
+              %option Infantil
+              %option Musical
+              %option Romance
+              %option Terror y suspense
+              %option Western
+
+            %label(for="new-show")
+              %input#new-show(type="checkbox") Sólo novedades
+          
+          %fieldset
+            
+            %label(for="classify") Ordenar por
+            %select#classify(name="classify")
+              %option Más populares
+              %option Mejor valoradas
+              %option Año de publicación
+              %option A-Z
+        
+        .list
+        
+        %ol
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/127-dias.jpg" alt="Cartel de la película 127 días")
+              %h3 127 días
+              %p 2010
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/apocalypse-now.jpg" alt="Cartel de la película Apocalypse Now")
+              %h3(lang="en-us") Apocalypse Now
+              %p 1979
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/dracula.jpg" alt="Cartel de la película Drácula")
+              %h3(lang="es") Drácula
+              %p 1931
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/selma.jpg" alt="Cartel de la película Selma")
+              %h3(lang="es") Selma
+              %p 2014
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/batman.jpg" alt="Cartel de la película Batman")
+              %h3(lang="es") Batman
+              %p 1966
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/et.jpg" alt="Cartel de la película ET El Extraterrestre")
+              %h3(lang="es") E.T., el extraterrestre
+              %p 1982
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/amelie.jpg" alt="Cartel de la película Amelie")
+              %h3(lang="fr") Amelie
+              %p 2001
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/cisne-negro.jpg" alt="Cartel de la película Cisne Negro")
+              %h3(lang="es") Cisne Negro
+              %p 2010
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/her.jpg" alt="Cartel de la película Her")
+              %h3(lang="en-us") Her
+              %p 2013
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/el-silencio-de-los-corderos.jpg" alt="Cartel de la película El silencio de los corderos")
+              %h3(lang="es") El silencio de los corderos
+              %p 1991
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/avatar.jpg" alt="Cartel de la película Avatar")
+              %h3(lang="es") Avatar
+              %p 2009
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/malefica.jpg" alt="Cartel de la película Maléfica")
+              %h3(lang="es") Maléfica
+              %p 2014
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/american-beauty.jpg" alt="Cartel de la película American Beauty")
+              %h3(lang="en-us") American Beauty
+              %p 1999
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/tintin.jpg" alt="Cartel de la película Las aventuras de Tintín")
+              %h3(lang="es") Las aventuras de Tintín
+              %p 2011
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/sinsajo.jpg" alt="Cartel de la película Los juegos del hambre: Sinsajo, Parte 1")
+              %h3(lang="es") Los juegos del hambre: Sinsajo - Parte I
+              %p 2014
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/vengadores.jpg" alt="Cartel de la película Los Vengadores")
+              %h3(lang="es") Los Vengadores
+              %p 2012
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/parque-jurasico.jpg" alt="Cartel de la película Parqué Jurásico")
+              %h3(lang="es") Parqué Jurásico
+              %p 1993
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+          
+          %li
+          
+            %a(href="#")
+              %img(src="images/posters/totoro.jpg" alt="Cartel de la película Mi vecino Totoro")
+              %h3(lang="es") Mi vecino Totoro
+              %p 1988
+              
+            %ul.holder
+              %li lorem ipsum dolor sit amet consectetur...
+              %li
+                %a(href="") Más
+              %li *****
+              %li
+                %a(href="")
+                  %strong 2.95 €
+      
+      %hr
+      
+      %section.publishers
+      
+        %h2 Distribuidoras
+        
+        %ul
+          %li
+            %img(src="#" alt="Dreamworks")
+          %li
+            %img(src="#" alt="Filmax")
+          %li
+            %img(src="#" alt="Miramax")
+          %li
+            %img(src="#" alt="Universal")
+          %li
+            %a(href="#") Otras distribuidoras
+      
+      %hr
+      
+      %section.how-to
+      
+        %h2 Cómo funciona Jaleo
+        
+        %ol
+        
+          %li
+            %h3 Elige tu película
+            %p Es muy fácil, Jaleo cuenta con casi 4500 referencias donde encontrar películas de estreno, grandes clásicos y series de culto
+            
+          %li
+            %h3 Cómprala en un clic
+            %p En Jaleo no te pediremos que pierdas el tiempo rellenando infinitos formularios. En menos de 1 minuto podrás empezar a ver tu selección.
+            
+          %li
+            %h3 Disfrútala dónde quieras
+            %p Una vez comiences a ver la película, dispones de 72h. para verla cuantas veces quieras, y en tantos dispositivos como desees. Cómodo ¿no?
+      
+    %hr
+
+    %footer
+    
+      %div
+      
+        %h2 Página
+        
+        %ul
+          %li
+            %a(href="#") Blog
+          %li
+            %a(href="#") Prensa
+          %li
+            %a(href="#") Condiciones de uso
+          %li
+            %a(href="#") Privacidad
+          %li
+            %a(href="#") Soporte
+        
+      %div
+      
+        %h2 Corporativo
+        
+        %ul
+          %li
+            %a(href="#") Nosotros
+          %li
+            %a(href="#") Contacto
+          %li
+            %a(href="#" hreflang="en") English site
+          %li
+            %a(href="#" hreflang="de") Deutsch website
+          %li
+            %a(href="#" hreflang="fr") Site français
+          
+      %div
+        
+        %h2 Síguenos
+        
+        %ul
+          %li
+            %a(href="#")
+              %img(src="#" alt="Facebook") Facebook
+          %li
+            %a(href="#")
+              %img(src="#" alt="twitter") Twitter
+          %li
+            %a(href="#")
+              %img(src="#" alt="Pinterest") Pinterest
+      
+      %div
+      
+        %h2
+          %img(src="#" LT="Logotipo de Jaleo") Jaleo
+          
+        %ul
+          %li
+            %a(href="#" rel="license") Jaleo de España S.A.
+          %li
+            %a(href="#") Calle del rey, 23 28080 Madrid
+          %li
+            %a(href="tel://0034555556585") 0034 555 55 65 85
+          %li
+            %a(href="mailto:info@jaleoapp.es") info@jaleoapp.es
+
+
+              
+            
