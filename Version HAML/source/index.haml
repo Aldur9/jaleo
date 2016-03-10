@@ -3,12 +3,13 @@
 
   /Head
   %head 
-  
+    
+    %link(rel="stylesheet" type="text/css" href="css/main.css")
     %meta(charset="utf-8")
     %title Jaleo
     %meta(name="description" content="Página de prueba")
     %meta(name="author" content="José A. Hernández")
-    %link(href="/favicon.ico" rel="shortcut.ico")
+    %link(href="/favicon.ico" rel="shortcut")
     
   /Body
   %body
@@ -19,11 +20,14 @@
     /Header
     %header
       
+      /Logo
+      .logo
+        %a(href="#") Jaleo
+      
       /Navigation
       %nav
+        
         %ul
-          %li
-            %a(href="#") Jaleo
           %li
             %a(href="#") Películas
           %li
@@ -509,7 +513,7 @@
       %div
       
         %h2
-          %img(src="#" LT="Logotipo de Jaleo") Jaleo
+          %img.logo(src="#" alt="Logotipo de Jaleo") Jaleo
           
         %ul
           %li

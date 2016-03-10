@@ -1,0 +1,30 @@
+nav {
+  float:right;
+  background-color: chartreuse;
+  font-size: 16px;
+  font-family: "monserrat";
+  
+}
+
+nav ul {
+  list-style-type: none;
+    
+}
+
+nav ul li {
+  display: inline;
+  margin: auto;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  opacity: 0.8;
+  color: #fff;
+}
+
+nav ul li a:hover{
+  text-decoration: none;
+  opacity: 1;
+  color: #fff;
+}
